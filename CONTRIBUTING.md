@@ -118,9 +118,8 @@ command:
 3. summary.txt - contains detailed summary of total number of crashes, passed and failed commands.
 
 
-### What happens when crash scenario is encountered?
+### What happens when crash is encountered?
 
-Crashes are identified in mailbox communication with the help of MCA (Machine Check Abort) emitting various codes for different types of crashes
+Crashes are identified in with the help of MCA (Machine Check Abort) emitting various codes for different types of crashes
 
-Thus, when a crash is encountered during mailbox communication, 
-the post processing framework recognizes the occurence of crash from the fox2run.log and updates the trace file with "<crash_log>" tag with description for that specific command.
+Thus, when a crash is encountered, the post processing framework recognizes the occurence of crash from the fox2run.log and updates the trace file with "<crash_log>" tag with description for that specific command.
