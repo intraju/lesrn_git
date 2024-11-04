@@ -21,8 +21,7 @@ Kiwi's drivers create a serial code stream, while the injectors setup code that 
 
 Each iteration of the main loop will pick one driver/goal combination from the bias file, and a handful of injectors. At the end of the driver code block, all of the injectors currently running will be killed to allow the next driver section a clean slate to start from.
 
-Bias file contains 
-[Bias file detailsl](https://wiki.ith.intel.com/pages/viewpage.action?pageId=2836772655#Kiwi-Biasfiles)
+for more details of bias file [Bias file details](https://wiki.ith.intel.com/pages/viewpage.action?pageId=2836772655#Kiwi-Biasfiles) can be refered
 
 
 know more about kiwi framework here : ![Kiwi documentation](https://wiki.ith.intel.com/pages/viewpage.action?spaceKey=ServerPcode&title=Kiwi)
@@ -79,7 +78,7 @@ Feature xml is a kiwi input file, kiwi uses this feature XML file to generate
 randomized test cases in scale. 
 
 example of feature xml for bios.
-![Image](image/feature_xml.png)
+![Image](feature_xml.png)
 
 Injector of specific feature which is defined in test interface is called in the feature xml.
 kiwi uses this injector to generate ruby testcase files.
