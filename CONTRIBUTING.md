@@ -20,10 +20,10 @@ Kiwi's drivers create a serial code stream, while the injectors setup code that 
 
 Each iteration of the main loop will pick one driver/goal combination from the bias file, and a handful of injectors. At the end of the driver code block, all of the injectors currently running will be killed to allow the next driver section a clean slate to start from.
 
-more details of bias file can be found ![here](https://wiki.ith.intel.com/pages/viewpage.action?pageId=2836772655#Kiwi-Biasfiles) can be refered
+More details of bias file can be found ![here](https://wiki.ith.intel.com/pages/viewpage.action?pageId=2836772655#Kiwi-Biasfiles)
 
 
-know more about kiwi framework here : ![Kiwi documentation](https://wiki.ith.intel.com/pages/viewpage.action?spaceKey=ServerPcode&title=Kiwi)
+Know more about kiwi framework here : ![Kiwi documentation](https://wiki.ith.intel.com/pages/viewpage.action?spaceKey=ServerPcode&title=Kiwi)
 
 Post Processing for mailbox
 =======================================================
@@ -33,7 +33,7 @@ Mailboxes communicate data to various IP's across the socket.
 It is essential to check the responses(error and data) obtained during communication.
 Volume validation helps in testing this mailbox communication at scale.   
 
-post processing framework helps to verify the responses obtained from P-code against requirements of mailbox specification.
+Post processing framework helps to verify the responses obtained from P-code against requirements of mailbox specification.
 
 Kiwi framework is used to generate testcase while injecting random command of the respective mailbox with data, interface values while also generating response for the same.
 Response consists of data and error.
@@ -95,7 +95,7 @@ It is suggested to keep the regressions folder empty before executing the below 
 
 Using the above feature xml, kiwi generates ruby testcase files for 'n' seeds and generates intermediate files for each seed.
 
-the below command runs 100 seeds for bios feature, i.e. 100 ruby test files are generated
+The below command runs 100 seeds for bios feature, i.e. 100 ruby test files are generated
 ```sh
 scripts/mailbox_fuzz.sh 100 "./scripts/run_feature_xml.sh $MODEL_ROOT/verif/tests/fox2/kiwi/bias/feature_xml/bios.xml"
 ```
@@ -115,9 +115,9 @@ mailbox_fuzzing_log.xml - trace xml obtained after populating data, interface re
 trace_out.xml - uptaded trace xml with final test results (pass/fail)
 
 
-### what happens when crash scenario is encountered?
+### What happens when crash scenario is encountered?
 
 Crashes are identified in mailbox communication with the help of MCA (Machine Check Abort) emitting various codes for different types of crashes
 
-when a crash is encountered during mailbox communication, 
+Thus, when a crash is encountered during mailbox communication, 
 the post processing framework recognizes the occurence of crash from the fox2run.log and updates the trace file with "<crash_log>" tag with description for that specific command.
