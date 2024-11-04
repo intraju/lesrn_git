@@ -111,9 +111,11 @@ The final test reults (pass/fail) is updated for each command in trace_out.xml f
 Important files to look for in regressions folder after running the above
 command:
 
-mailbox_fuzzing_log.xml - trace xml obtained after populating data, interface response information of all commands by parsing fox2run.log files
-trace_out.xml - uptaded trace xml with final test results (pass/fail)
-summary.txt - contains detailed summary of total number of crashes, passed and failed commands.
+1. mailbox_fuzzing_log.xml - trace xml obtained after populating data, interface response information of all commands by parsing fox2run.log files
+
+2. trace_out.xml - uptaded trace xml with final test results (pass/fail)
+
+3. summary.txt - contains detailed summary of total number of crashes, passed and failed commands.
 
 
 ### What happens when crash scenario is encountered?
