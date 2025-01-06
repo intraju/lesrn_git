@@ -23,7 +23,7 @@ Each iteration of the main loop will pick one driver/goal combination from the b
 More details of bias file can be found [here](https://wiki.ith.intel.com/pages/viewpage.action?pageId=2836772655#Kiwi-Biasfiles)
 
 
-Know more about kiwi framework here : ![Kiwi documentation](https://wiki.ith.intel.com/pages/viewpage.action?spaceKey=ServerPcode&title=Kiwi)
+Know more about kiwi framework here : [Kiwi documentation](https://wiki.ith.intel.com/pages/viewpage.action?spaceKey=ServerPcode&title=Kiwi)
 
 Post Processing for mailbox
 =======================================================
